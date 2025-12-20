@@ -1,0 +1,93 @@
+Multiple Linear Regression (MLR) is a supervised machine learning and statistical technique used to predict a continuous value using two or more independent variables.
+
+In simple linear regression, we use only one input feature. In multiple linear regression, we use many features together to explain or predict the output.
+
+The basic model is: y = β0​+β1​x1​+β2​x2​+β3​x3​+⋯+βn​xn​+ϵ
+
+y = dependent variable (what we want to predict)
+
+
+
+Example:
+Suppose we want to predict a student’s final score based on study hours, attendance, and class test marks. Each of these factors contributes differently to the final score, and multiple linear regression learns how much each factor matters.
+
+Key assumptions:
+
+Linear relationship between inputs and output
+
+Independent variables are not highly correlated (no multicollinearity)
+
+Errors are normally distributed
+
+Constant variance of errors (homoscedasticity)
+
+Why it is useful:
+
+Simple and easy to interpret
+
+Helps understand the effect of each variable
+
+Widely used in economics, engineering, and data analysis
+
+Limitation:
+It cannot model complex nonlinear relationships unless features are transformed.
+
+In short, multiple linear regression predicts a numeric value by combining the effects of several input variables in a linear way.
+
+
+
+
+
+
+
+
+In multiple linear regression, these are 5 common methods used to build/select a model (mainly for choosing the best independent variables):
+
+1. All-in
+
+You include all available independent variables in the model at once.
+It is simple and fast, but it may include irrelevant features, which can reduce accuracy and cause overfitting.
+
+2. Backward Elimination
+
+You start with all variables, then:
+
+Fit the model
+
+Remove the variable with the highest p-value (least significant)
+
+Refit and repeat
+This continues until all remaining variables are statistically significant.
+
+3. Forward Selection
+
+You start with no variables, then:
+
+Add the variable that improves the model the most
+
+Keep adding variables one by one
+It stops when adding a new variable no longer improves performance.
+
+4. Bidirectional Elimination
+
+This is a combination of forward selection and backward elimination.
+You:
+
+Add significant variables
+
+Remove insignificant ones at each step
+It is more balanced but slightly more complex.
+
+5. Score Comparison
+
+You build multiple models with different feature combinations and compare them using metrics like:
+
+R²
+
+Adjusted R²
+
+AIC / BIC
+The model with the best score is selected.
+
+In short:
+These are not different regression algorithms, but different strategies to choose the best variables when building a multiple linear regression model.
