@@ -1,0 +1,32 @@
+Support Vector Regression (SVR) is a regression technique in machine learning that tries to find a function that predicts values as accurately as possible while keeping the model simple.
+
+Unlike normal regression, SVR does not try to minimize the total error directly. Instead, it allows a small error margin and focuses on fitting the data within a tolerance range.
+
+Main idea:
+SVR tries to fit a line (or curve) such that most data points lie inside a tube, called the ε-insensitive margin. Errors inside this tube are ignored, and only points outside the tube are penalized.
+
+Mathematically, SVR tries to find:
+
+y=wx+b
+
+while keeping the error less than ε and making 
+ as small as possible (to avoid overfitting).
+
+Key concepts:
+
+ε (epsilon): Defines the width of the tube. Errors within ε are not counted.
+
+Support vectors: Data points that lie outside the ε margin. These points determine the model.
+
+C (regularization parameter): Controls the trade-off between model simplicity and error penalty.
+
+Kernel trick: Allows SVR to handle non-linear data by mapping inputs to higher dimensions (linear, polynomial, RBF kernels are common).
+
+Why SVR is useful:
+SVR works well for non-linear regression, is robust to outliers, and performs effectively on small to medium datasets.
+
+Example:
+If you predict house prices, small prediction errors are acceptable. SVR ignores minor errors and focuses on larger deviations, producing a smooth and stable prediction curve.
+
+Summary:
+SVR fits a function within an acceptable error range, uses only key data points (support vectors), and can model complex patterns using kernels.
