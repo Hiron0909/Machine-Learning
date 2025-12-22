@@ -1,0 +1,27 @@
+Polynomial regression is a type of regression in machine learning used when the relationship between the input (independent variable) and output (dependent variable) is not a straight line, but curved.
+In simple linear regression, we assume a linear relationship:
+y=b0+b1xy = b_0 + b_1 xy=b0​+b1​x
+But many real-world problems don’t follow a straight line. Polynomial regression handles this by adding higher powers of the input feature:
+y=b0+b1x+b2x2+b3x3+⋯+bnxny = b_0 + b_1 x + b_2 x^2 + b_3 x^3 + \dots + b_n x^ny=b0​+b1​x+b2​x2+b3​x3+⋯+bn​xn
+Here, n is the degree of the polynomial.
+Even though it looks complex, polynomial regression is still a linear model because it is linear with respect to the parameters b0,b1,b2,…b_0, b_1, b_2, \dotsb0​,b1​,b2​,….
+How it works:
+First, the original feature is transformed into polynomial features (like x2,x3x^2, x^3x2,x3). Then linear regression is applied to these new features. This allows the model to fit curved patterns in data.
+Example:
+Suppose exam score depends on study time. For small study hours, scores increase slowly, then rise fast, and finally level off. A straight line may not fit well, but a polynomial curve can capture this behavior better.
+Key points:
+
+
+Used when data shows a curved trend
+
+
+Degree controls model complexity
+
+
+Higher degree fits data better but may cause overfitting
+
+
+Feature scaling is important for stability
+
+
+In short, polynomial regression helps model non-linear relationships using a linear regression approach with transformed features.
