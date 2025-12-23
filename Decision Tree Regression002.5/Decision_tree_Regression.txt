@@ -1,0 +1,54 @@
+Decision Tree Regression is a method used to predict a number (not a category).
+Example: house price, exam marks, salary, temperature.
+
+Think of it like asking questions step by step.
+
+Imagine you want to predict house price.
+
+The model asks simple questions like:
+
+Is the house size greater than 1000 sq ft?
+
+Is the number of rooms more than 3?
+
+Based on the answers, the data is split into smaller groups.
+
+Each split tries to put similar values together.
+
+At the end of the tree, there is no more question.
+That final point is called a leaf node.
+
+👉 In a leaf node, the model stores the average value of the target.
+
+So:
+
+If a leaf has house prices: 50k, 52k, 48k
+
+The prediction will be their average = 50k
+
+How prediction works:
+
+Input goes from the top of the tree
+
+Follows the yes/no questions
+
+Reaches a leaf
+
+Output is the average value at that leaf
+
+Why it is easy:
+
+No formulas needed
+
+Works like real-life decisions
+
+Easy to understand and explain
+
+One important drawback:
+
+If the tree becomes too large, it can memorize data (overfitting)
+
+In one line:
+Decision Tree Regression predicts a number by splitting data using simple questions and returning the average value at the end.
+
+If you want, I can also explain it using a small table example or simple diagram idea.
