@@ -1,0 +1,66 @@
+K-Nearest Neighbors (KNN) Classification is one of the simplest classification algorithms in machine learning.
+
+Main idea:
+To classify a new data point, KNN looks at the K nearest data points around it and decides the class by majority vote.
+
+Simple example
+
+Suppose:
+
+You want to classify a student as Pass or Fail
+
+You choose K = 5
+
+The algorithm:
+
+Finds the 5 closest students to the new student
+
+Checks their classes
+
+Pass: 3
+
+Fail: 2
+
+New student is classified as Pass
+
+How “nearest” is decided
+
+KNN uses distance to find neighbors, usually:
+
+Euclidean distance (most common)
+
+Closer points influence the decision more.
+
+How KNN works (easy steps)
+
+Choose a value for K
+
+Calculate distance from the new point to all training points
+
+Select the K closest points
+
+Assign the class that appears most often
+
+Important points
+
+Small K → sensitive to noise
+
+Large K → smoother, but may lose details
+
+Always scale features (very important for KNN)
+
+Advantages
+
+Very easy to understand
+
+No training time
+
+Works well for small datasets
+
+Disadvantages
+
+Slow for large datasets
+
+Needs a lot of memory
+
+Sensitive to feature scaling
