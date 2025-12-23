@@ -1,0 +1,54 @@
+Random Forest Regression is a method that predicts a number by using many decision trees together.
+
+First, remember this:
+
+A single decision tree can make mistakes because it learns too much from the training data.
+
+Random Forest fixes this problem by using many trees instead of one.
+
+How it works (simple idea):
+
+The model creates many decision trees.
+
+Each tree is trained on a random part of the data.
+
+Each tree makes its own prediction.
+
+The final prediction is the average of all tree predictions.
+
+Example:
+
+Tree 1 predicts: 50
+
+Tree 2 predicts: 55
+
+Tree 3 predicts: 52
+
+Final prediction = (50 + 55 + 52) / 3 = 52.33
+
+Why it is called “Random”:
+
+Data given to each tree is random
+
+Features used for splitting are also random
+
+This randomness makes trees different, which improves accuracy.
+
+Why Random Forest Regression is good:
+
+More accurate than a single decision tree
+
+Reduces overfitting
+
+Works well for complex data
+
+No need for feature scaling
+
+Small limitation:
+
+Slower than one decision tree
+
+Harder to visualize
+
+In one line:
+Random Forest Regression predicts a number by combining the results of many decision trees and taking their average.
