@@ -1,0 +1,11 @@
+Naive Bayes is a simple and fast supervised machine learning algorithm mainly used for classification problems. It works on the idea of probability and is based on Bayes’ Theorem.
+
+At its core, Naive Bayes tries to find the probability that a data point belongs to a certain class by looking at its features. Bayes’ Theorem says that the probability of a class given some data depends on how likely the data is for that class and how common the class is overall. In simple words, the model asks: “Given these features, which class is most probable?”
+
+The word “naive” comes from a strong assumption the algorithm makes: it assumes that all features are independent of each other. This means the presence of one feature does not affect another. In real life this is often not true, but surprisingly, the algorithm still works very well in many cases.
+
+Naive Bayes is widely used in text-related tasks like spam detection, sentiment analysis, and document classification. For example, in spam filtering, it calculates how likely an email is spam based on the words it contains.
+
+There are different types of Naive Bayes models. Gaussian Naive Bayes is used when features are continuous, Multinomial Naive Bayes is common for text data, and Bernoulli Naive Bayes is used when features are binary.
+
+Overall, Naive Bayes is popular because it is easy to understand, fast to train, works well with large datasets, and performs especially well for text classification, even though its independence assumption is very simple.
