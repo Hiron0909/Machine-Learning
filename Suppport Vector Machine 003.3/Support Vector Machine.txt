@@ -1,0 +1,11 @@
+                                                                   Support Vector Machine
+
+Support Vector Machine (SVM) is a popular machine learning algorithm mainly used for classification. Its main goal is to separate different classes in the best possible way. Instead of just finding any line or boundary, SVM looks for the optimal boundary that can clearly divide the data into classes.
+
+The key idea of SVM is to draw a decision boundary (a line in 2D, a plane in 3D) that separates the classes. What makes SVM special is that it chooses the boundary that keeps the maximum distance from the nearest data points of each class. This distance is called the margin, and a larger margin helps the model make better predictions on new data.
+
+The data points that lie closest to the decision boundary are called support vectors. These points are very important because they directly determine the position and direction of the boundary. If these points move, the boundary also changes, which is why the algorithm is named Support Vector Machine.
+
+Sometimes, the data cannot be separated by a straight line. In such cases, SVM uses a method called a kernel. A kernel helps transform the data into a higher dimension so that a clear boundary can be drawn. Common kernels include linear, polynomial, and RBF, with RBF being the most widely used.
+
+SVM works well for small to medium-sized datasets and for data with many features. However, it usually requires feature scaling and can be slower for very large datasets. Overall, SVM is a powerful algorithm that focuses on finding the best possible separation between classes.
