@@ -1,0 +1,9 @@
+Kernel SVM is an extension of Support Vector Machine used when data cannot be separated by a straight line. In many real-world problems, classes are mixed in a complex way, and a simple linear boundary is not enough. Kernel SVM solves this problem by allowing SVM to create non-linear decision boundaries.
+
+The main idea behind Kernel SVM is the kernel trick. Instead of working directly in the original feature space, the kernel function transforms the data into a higher dimension where separation becomes easier. The important point is that this transformation is done mathematically, without actually computing new features, which makes the process efficient.
+
+In the higher-dimensional space, SVM can draw a linear boundary, but when this boundary is viewed back in the original space, it appears as a curved line. This is why Kernel SVM can handle complex patterns that linear SVM cannot separate.
+
+There are different types of kernels used in SVM. The Linear kernel is used when data is almost linearly separable. The Polynomial kernel creates curved boundaries based on polynomial equations. The RBF (Radial Basis Function) kernel is the most popular because it works well in most cases and can handle complex data. Another kernel is the Sigmoid kernel, which behaves somewhat like a neural network.
+
+Kernel SVM is powerful and accurate, especially for non-linear data. However, choosing the right kernel and its parameters is important, and feature scaling is usually required. In summary, Kernel SVM helps SVM classify complex data by transforming it into a space where clear separation is possible.
