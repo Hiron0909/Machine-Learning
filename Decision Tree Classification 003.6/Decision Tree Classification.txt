@@ -1,0 +1,9 @@
+Decision Tree Classification is a supervised machine learning method used to classify data by learning simple decision rules from features.
+
+A decision tree works like a flowchart. It starts from a root node, where the data is split based on a condition on one feature (for example: age ≤ 30?). Each split creates branches, and this process continues until it reaches leaf nodes, which represent the final class labels (such as Yes/No, Spam/Not Spam).
+
+The main idea is to choose the best feature at each step to split the data so that similar classes stay together. To decide this, decision trees use measures like Gini Impurity, Entropy, or Information Gain. These measures tell how “pure” a node is. A node is pure if it contains samples of only one class.
+
+Decision trees are easy to understand and interpret because the rules are clear and visual. They can handle both numerical and categorical data and require little data preprocessing (no feature scaling needed). However, a major drawback is overfitting—the tree can become too complex and fit noise instead of real patterns. This is controlled using techniques like max depth, minimum samples per leaf, or pruning.
+
+In short, decision tree classification learns rules from data, makes decisions step by step, and finally predicts the class at the leaf node in a simple and human-readable way.
