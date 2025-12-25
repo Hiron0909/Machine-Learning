@@ -1,0 +1,11 @@
+Random Forest Classification is an ensemble machine learning method that improves prediction accuracy by combining many decision trees.
+
+Instead of using a single decision tree, a random forest builds multiple decision trees during training. Each tree is trained on a random subset of the data (called bootstrap sampling) and uses a random subset of features when making splits. Because of this randomness, the trees become different from each other.
+
+When a new data point is given for prediction, each tree predicts a class, and the final output is decided by majority voting. The class that gets the most votes from all trees becomes the final prediction.
+
+The main advantage of random forest is that it reduces overfitting, which is a common problem in single decision trees. Since many trees work together, the model becomes more stable and accurate. It also works well with large datasets and can handle both numerical and categorical features.
+
+However, random forests are less interpretable than a single decision tree because decisions come from many trees. They also require more computation and memory.
+
+In summary, random forest classification combines many randomly built decision trees and uses voting to make strong, reliable, and accurate classification predictions.
