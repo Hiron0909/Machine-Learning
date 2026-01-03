@@ -1,0 +1,19 @@
+K-Means clustering is an unsupervised machine learning algorithm used to group similar data points into K clusters. “Unsupervised” means there are no labeled outputs—the algorithm finds patterns by itself.
+
+Basic idea:
+You choose a number K (how many groups you want). The algorithm then places the data points into K clusters so that points inside the same cluster are as similar as possible, and points in different clusters are as different as possible. Similarity is usually measured using distance (most commonly Euclidean distance).
+
+How K-Means works (step by step):
+First, the algorithm randomly selects K points from the dataset as initial centroids (cluster centers). Next, each data point is assigned to the nearest centroid based on distance. After that, the centroids are recalculated by taking the mean of all points assigned to each cluster. These two steps—assignment and centroid update—repeat until the centroids no longer change (or change very little). At this point, clustering stops.
+
+Why it is called “K-Means”:
+“K” is the number of clusters, and “Means” comes from using the mean (average) to update each cluster center.
+
+Choosing the value of K:
+The value of K is not found automatically. Common methods to choose K include the Elbow Method and Silhouette Score.
+
+Advantages:
+K-Means is simple, fast, and works well for large datasets.
+
+Limitations:
+You must choose K beforehand, it is sensitive to initial centroids, and it does not work well with non-spherical or overlapping clusters.
