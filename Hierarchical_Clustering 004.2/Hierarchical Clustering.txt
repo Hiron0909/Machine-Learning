@@ -1,0 +1,29 @@
+Hierarchical clustering is an unsupervised machine learning algorithm that groups data points by creating a tree-like structure of clusters, called a dendrogram. Unlike K-Means, it does not require choosing the number of clusters in advance.
+
+Basic idea:
+The algorithm builds clusters step by step based on similarity (distance) between data points. Closely related points are grouped first, and distant points are grouped later. The final result shows how clusters are formed at different levels.
+
+Types of hierarchical clustering:
+There are two main approaches.
+Agglomerative clustering (bottom-up) starts with each data point as its own cluster. Then, the two closest clusters are merged repeatedly until all points form a single cluster.
+Divisive clustering (top-down) starts with all data points in one cluster and repeatedly splits clusters into smaller ones. In practice, agglomerative clustering is used more often.
+
+How distance between clusters is measured (linkage):
+To decide which clusters to merge, different linkage methods are used.
+
+Single linkage: distance between the closest points of two clusters
+
+Complete linkage: distance between the farthest points
+
+Average linkage: average distance between all points
+
+Ward’s method: minimizes variance within clusters
+
+Dendrogram and cluster selection:
+The dendrogram visually shows the merging process. By drawing a horizontal cut across the dendrogram, you can decide how many clusters you want.
+
+Advantages:
+It does not require pre-selecting K, works well for small datasets, and provides a clear visual interpretation.
+
+Limitations:
+It is computationally expensive, sensitive to noise and outliers, and not suitable for very large datasets.
