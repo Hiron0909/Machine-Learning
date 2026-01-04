@@ -1,0 +1,32 @@
+Apriori is an association rule learning algorithm used to find frequent itemsets and generate association rules from large transactional datasets. It is widely used in market basket analysis.
+
+Basic idea (Apriori principle):
+
+If an itemset is frequent, then all of its subsets must also be frequent.
+Conversely, if an itemset is infrequent, none of its supersets can be frequent. This principle helps reduce unnecessary calculations.
+
+How Apriori works:
+First, the algorithm scans the dataset to find frequent 1-itemsets (items whose support is above a minimum threshold).
+Next, these frequent itemsets are combined to form larger itemsets (2-itemsets, 3-itemsets, and so on).
+After each combination step, itemsets that do not meet minimum support are removed.
+This process continues until no more frequent itemsets can be found.
+Finally, association rules are generated from the frequent itemsets using minimum confidence.
+
+Key parameters:
+
+Minimum Support: Filters out rare itemsets
+
+Minimum Confidence: Filters out weak rules
+
+Lift (optional): Measures strength of a rule
+
+Example:
+If {Milk, Bread} appears frequently in transactions and the rule
+Milk → Bread
+has high confidence, Apriori will keep this rule.
+
+Advantages:
+It is simple, easy to understand, and effective for small to medium datasets.
+
+Limitations:
+It requires multiple database scans, can be slow for large datasets, and may generate many candidate itemsets.
