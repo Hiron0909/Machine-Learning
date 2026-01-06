@@ -1,0 +1,9 @@
+Upper Confidence Bound (UCB) is a technique used in machine learning, mainly in reinforcement learning, to make smart decisions when there are multiple choices available. Its main purpose is to help a system choose the best option while still trying new options that might perform better in the future.
+
+The core idea of UCB is to balance two important things: exploitation and exploration. Exploitation means choosing the option that has given the best results so far, while exploration means trying options that have not been tested enough. UCB does not focus only on past success; it also considers how uncertain each option is.
+
+UCB works by giving each option a score. This score is calculated by adding two parts: the average reward the option has given so far and an extra value called the confidence term. The confidence term becomes larger when an option has been tried fewer times. Because of this, options with less information are more likely to be chosen, allowing the model to explore them.
+
+As an option is selected more times, its uncertainty decreases and the confidence term becomes smaller. Then the decision depends more on the average reward. In this way, UCB naturally shifts from exploration to exploitation as learning continues, without needing random choices.
+
+In simple words, Upper Confidence Bound always selects the option that has the highest possible reward considering both how well it has performed and how uncertain it is. This makes UCB an effective and reliable method for decision-making problems where learning from experience is important.
