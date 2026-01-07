@@ -1,0 +1,9 @@
+Thompson Sampling is a popular algorithm used to solve the Multi-Armed Bandit problem in reinforcement learning. Its main idea is to make decisions based on probability rather than fixed rules. Instead of always choosing the option that looks best so far, it selects actions according to how likely they are to be optimal. This helps the algorithm naturally balance exploration and exploitation.
+
+In Thompson Sampling, each action (or arm) is associated with a probability distribution that represents how good that action might be. For problems with binary rewards (such as click = 1, no click = 0), the Beta distribution is commonly used. At the beginning, all actions are treated equally because there is no prior knowledge. As the algorithm observes more rewards, these probability distributions are updated to reflect past successes and failures.
+
+At each decision step, Thompson Sampling works by sampling one value from the probability distribution of each action. The action with the highest sampled value is then selected. This means that actions with higher expected rewards are more likely to be chosen, but less-explored actions still have a chance to be selected due to uncertainty in their distributions.
+
+After an action is selected, the algorithm observes the reward and updates the corresponding distribution. If the action results in a success, the probability of that action being good increases; if it results in a failure, that probability decreases. Over time, the distributions become more confident, and the algorithm increasingly favors the best-performing actions.
+
+Thompson Sampling is widely used in online decision-making problems such as online advertising, recommendation systems, and A/B testing. It is especially effective because it adapts quickly, requires no manual tuning of exploration parameters, and often performs better in practice than deterministic methods like Upper Confidence Bound.
